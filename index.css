@@ -1,0 +1,94 @@
+.box{
+    height: 100px;
+    width: 150px;
+    background-color: aqua;
+    animation-name: bg-color-change;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+
+}
+@keyframes bg-color-change{
+
+from{
+         background-color: black;
+}
+to{
+         background-color: brown;
+}
+
+
+}
+
+.box-2{
+    height: 200px;
+    width: 100px;
+    background-color: blue;
+    animation-name: width-flow;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+  
+}
+@keyframes width-flow{
+    from{
+        width: 0;
+    }
+    to{
+         width: 400px;
+    }
+}
+
+.box-3{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: chocolate;
+    animation-name: circle;
+    position: relative;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes circle{
+    0%{
+        top: 0;
+        left: 0;
+background-color: brown;
+
+    }
+    25%{
+        top: 0;
+        left: 500px;
+        background-color: chartreuse;
+
+    }
+    50%{
+        top: 500px;
+        left: 500px;
+        background-color: crimson;
+    }
+    75%{
+        top: 500px;
+        left:0;
+        background-color: darkmagenta;
+    }
+    100%{
+        top:0;
+        left:0;
+        background-color: deeppink;
+    }
+}
+
+.box-4{
+    height: 100px;
+    width: 200px;
+    background-color: darkturquoise;
+    transition: all 2s ease-in;
+    
+}
+.box-4:hover{
+         background-color: indianred;
+         width: 400px;
+         height: 300px;
+}
